@@ -1,0 +1,178 @@
+html {
+  background-color: #FF9E9E;
+    width: 1280px;
+    height: 960px;
+    overflow: hidden;
+}
+.grid {
+    display: grid;
+
+    grid-template-columns:  repeat(39, 32.82px);
+
+    grid-template-rows: repeat(15, 64px);
+}
+
+#stocks {
+margin: auto;
+}
+
+body {
+    margin: 0;
+}
+
+#stockOne {
+  background: linear-gradient(90deg, #8BFFB2 50%,#73D695 50%);
+  grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: bottom;
+        grid-row-end: 14;
+}
+
+#googleLogo {
+  grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 15;
+        grid-row-end: 12;
+}
+
+#googleLogo img {
+  height: 65.64px;
+  width: 65.64px;
+}
+
+#stockTwo {
+  background: linear-gradient(90deg, #8BFFB2 50%,#73D695 50%);
+  grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: bottom;
+        grid-row-end: 13;
+}
+
+#teslaLogo {
+  grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 15;
+        grid-row-end: 11;
+}
+
+#teslaLogo img {
+  height: 65.64px;
+  width: 65.64px;
+}
+
+#stockThree {
+  background: linear-gradient(90deg, #8BFFB2 50%,#73D695 50%);
+  grid-column-start: 9;
+        grid-column-end: 11;
+        grid-row-start: bottom;
+        grid-row-end: 12;
+}
+
+#jnjLogo {
+  grid-column-start: 9;
+        grid-column-end: 11;
+        grid-row-start: 15;
+        grid-row-end: 10;
+}
+
+#jnjLogo img {
+  height: 65.64px;
+  width: 65.64px;
+}
+
+#stockFour {
+  background: linear-gradient(90deg, #8BFFB2 50%,#73D695 50%);
+  grid-column-start: 12;
+        grid-column-end: 14;
+        grid-row-start: bottom;
+        grid-row-end: 11;
+}
+
+#msftLogo {
+  grid-column-start: 12;
+        grid-column-end: 14;
+        grid-row-start: 15;
+        grid-row-end: 9;
+}
+
+#msftLogo img {
+  height: 65.64px;
+  width: 65.64px;
+}
+
+/* Multiply rows by 2 so that there are increments to place img */
+
+#stockFive {
+  background: linear-gradient(90deg, #8BFFB2 50%,#73D695 50%);
+  grid-column-start: 15;
+        grid-column-end: 17;
+        grid-row-start: bottom;
+        grid-row-end: 9;
+}
+
+#stockSix {
+  background: linear-gradient(90deg, #8BFFB2 50%,#73D695 50%);
+  grid-column-start: 18;
+        grid-column-end: 20;
+        grid-row-start: bottom;
+        grid-row-end: 7;
+}
+
+#stockSeven {
+  background: linear-gradient(90deg, #8BFFB2 50%,#73D695 50%);
+  grid-column-start: 21;
+        grid-column-end: 23;
+        grid-row-start: bottom;
+        grid-row-end: 6;
+}
+
+#stockEight {
+  background: linear-gradient(90deg, #8BFFB2 50%,#73D695 50%);
+  grid-column-start: 24;
+        grid-column-end: 26;
+        grid-row-start: bottom;
+        grid-row-end: 7;
+}
+
+#stockNine {
+  background: linear-gradient(90deg, #8BFFB2 50%,#73D695 50%);
+  grid-column-start: 27;
+        grid-column-end: 29;
+        grid-row-start: bottom;
+        grid-row-end: 9;
+}
+
+#stockTen {
+  background: linear-gradient(90deg, #8BFFB2 50%,#73D695 50%);
+  grid-column-start: 30;
+        grid-column-end: 32;
+        grid-row-start: bottom;
+        grid-row-end: 7;
+}
+
+#stockEleven {
+  background: linear-gradient(90deg, #8BFFB2 50%,#73D695 50%);
+  grid-column-start: 33;
+        grid-column-end: 35;
+        grid-row-start: bottom;
+        grid-row-end: 5;
+}
+
+#stockTwelve {
+  background: linear-gradient(90deg, #8BFFB2 50%,#73D695 50%);
+  grid-column-start: 36;
+        grid-column-end: 38;
+        grid-row-start: bottom;
+        grid-row-end: 4;
+}
+
+  
+
+
+
+
+  
+
+
+
+  
