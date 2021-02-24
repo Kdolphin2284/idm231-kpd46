@@ -9,15 +9,22 @@ html {
 
     grid-template-columns:  repeat(39, 32.82px);
 
-    grid-template-rows: repeat(15, 64px);
-}
-
-#stocks {
-margin: auto;
+    grid-template-rows: repeat(30, 32px);
 }
 
 body {
     margin: 0;
+}
+
+#verticalForm {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 3;
+  grid-column-end: none;
+}
+
+#verticalForm div {
+  padding-top: 12px;
 }
 
 #stockOne {
@@ -25,14 +32,14 @@ body {
   grid-column-start: 3;
         grid-column-end: 5;
         grid-row-start: bottom;
-        grid-row-end: 14;
+        grid-row-end: 28;
 }
 
 #googleLogo {
   grid-column-start: 3;
         grid-column-end: 5;
-        grid-row-start: 15;
-        grid-row-end: 12;
+        grid-row-start: 25;
+        grid-row-end: none;
 }
 
 #googleLogo img {
@@ -45,14 +52,14 @@ body {
   grid-column-start: 6;
         grid-column-end: 8;
         grid-row-start: bottom;
-        grid-row-end: 13;
+        grid-row-end: 26;
 }
 
 #teslaLogo {
   grid-column-start: 6;
         grid-column-end: 8;
-        grid-row-start: 15;
-        grid-row-end: 11;
+        grid-row-start: 23;
+        grid-row-end: none;
 }
 
 #teslaLogo img {
@@ -65,14 +72,14 @@ body {
   grid-column-start: 9;
         grid-column-end: 11;
         grid-row-start: bottom;
-        grid-row-end: 12;
+        grid-row-end: 24;
 }
 
 #jnjLogo {
   grid-column-start: 9;
         grid-column-end: 11;
-        grid-row-start: 15;
-        grid-row-end: 10;
+        grid-row-start: 21;
+        grid-row-end: none;
 }
 
 #jnjLogo img {
@@ -85,14 +92,14 @@ body {
   grid-column-start: 12;
         grid-column-end: 14;
         grid-row-start: bottom;
-        grid-row-end: 11;
+        grid-row-end: 22;
 }
 
 #msftLogo {
   grid-column-start: 12;
         grid-column-end: 14;
-        grid-row-start: 15;
-        grid-row-end: 9;
+        grid-row-start: 19;
+        grid-row-end: none;
 }
 
 #msftLogo img {
@@ -100,14 +107,24 @@ body {
   width: 65.64px;
 }
 
-/* Multiply rows by 2 so that there are increments to place img */
-
 #stockFive {
   background: linear-gradient(90deg, #8BFFB2 50%,#73D695 50%);
   grid-column-start: 15;
         grid-column-end: 17;
         grid-row-start: bottom;
-        grid-row-end: 9;
+        grid-row-end: 18;
+}
+
+#appleLogo {
+  grid-column-start: 15;
+        grid-column-end: 18;
+        grid-row-start: 15;
+        grid-row-end: none;
+}
+
+#appleLogo img {
+  height: 65.64px;
+  width: 65.64px;
 }
 
 #stockSix {
@@ -115,7 +132,19 @@ body {
   grid-column-start: 18;
         grid-column-end: 20;
         grid-row-start: bottom;
-        grid-row-end: 7;
+        grid-row-end: 14;
+}
+
+#gmeLogo {
+  grid-column-start: 18;
+        grid-column-end: 20;
+        grid-row-start: 11;
+        grid-row-end: none;
+}
+
+#gmeLogo img {
+  height: 65.64px;
+  width: 65.64px;
 }
 
 #stockSeven {
@@ -123,7 +152,19 @@ body {
   grid-column-start: 21;
         grid-column-end: 23;
         grid-row-start: bottom;
-        grid-row-end: 6;
+        grid-row-end: 12;
+}
+
+#pfizerLogo {
+  grid-column-start: 21;
+        grid-column-end: 23;
+        grid-row-start: 9;
+        grid-row-end: none;
+}
+
+#pfizerLogo img {
+  height: 65.64px;
+  width: 65.64px;
 }
 
 #stockEight {
@@ -131,7 +172,19 @@ body {
   grid-column-start: 24;
         grid-column-end: 26;
         grid-row-start: bottom;
-        grid-row-end: 7;
+        grid-row-end: 14;
+}
+
+#amznLogo {
+  grid-column-start: 24;
+        grid-column-end: 27;
+        grid-row-start: 11;
+        grid-row-end: none;
+}
+
+#amznLogo img {
+  height: 65.64px;
+  width: 65.64px;
 }
 
 #stockNine {
@@ -139,7 +192,19 @@ body {
   grid-column-start: 27;
         grid-column-end: 29;
         grid-row-start: bottom;
-        grid-row-end: 9;
+        grid-row-end: 18;
+}
+
+#nflxLogo {
+  grid-column-start: 27;
+        grid-column-end: 30;
+        grid-row-start: 15;
+        grid-row-end: none;
+}
+
+#nflxLogo img {
+  height: 65.64px;
+  width: 65.64px;
 }
 
 #stockTen {
@@ -147,7 +212,19 @@ body {
   grid-column-start: 30;
         grid-column-end: 32;
         grid-row-start: bottom;
-        grid-row-end: 7;
+        grid-row-end: 14;
+}
+
+#nvdaLogo {
+  grid-column-start: 30;
+        grid-column-end: 33;
+        grid-row-start: 11;
+        grid-row-end: none;
+}
+
+#nvdaLogo img {
+  height: 65.64px;
+  width: 65.64px;
 }
 
 #stockEleven {
@@ -155,7 +232,19 @@ body {
   grid-column-start: 33;
         grid-column-end: 35;
         grid-row-start: bottom;
-        grid-row-end: 5;
+        grid-row-end: 10;
+}
+
+#btcLogo {
+  grid-column-start: 33;
+        grid-column-end: 36;
+        grid-row-start: 7;
+        grid-row-end: none;
+}
+
+#btcLogo img {
+  height: 65.64px;
+  width: 65.64px;
 }
 
 #stockTwelve {
@@ -163,9 +252,20 @@ body {
   grid-column-start: 36;
         grid-column-end: 38;
         grid-row-start: bottom;
-        grid-row-end: 4;
+        grid-row-end: 8;
 }
 
+#etherLogo {
+  grid-column-start: 36;
+        grid-column-end: 39;
+        grid-row-start: 5;
+        grid-row-end: none;
+}
+
+#etherLogo img {
+  height: 65.64px;
+  width: 65.64px;
+}
   
 
 
