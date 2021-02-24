@@ -1,19 +1,19 @@
 html {
-  background-color: #FF9E9E;
-    width: 1280px;
-    height: 960px;
-    overflow: hidden;
+  background-color: #333333;
 }
+
 .grid {
     display: grid;
-
     grid-template-columns:  repeat(39, 32.82px);
-
     grid-template-rows: repeat(30, 32px);
 }
 
 body {
     margin: 0;
+    padding: 0;
+    width: 1280px;
+    height: 960px;
+    overflow: hidden;
 }
 
 #verticalForm {
@@ -21,10 +21,35 @@ body {
   flex-direction: column;
   grid-column-start: 3;
   grid-column-end: none;
+  margin-top: 16px;
 }
 
 #verticalForm div {
-  padding-top: 12px;
+  padding-top: 16px;
+}
+
+input[type=text] {
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: inset -1px -2px 4px #a5a5a5, inset 3px 3px 4px rgb(22, 22, 22);
+  height: 32px;
+  width: 192px;
+}
+
+#username {
+  padding-left: 16px;
+}
+
+input[type=submit]{
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: inset -1px -2px 4px #a5a5a5, inset 3px 3px 4px rgb(22, 22, 22);
+  height: 32px;
+  width: 72px;
 }
 
 #stockOne {
@@ -266,7 +291,20 @@ body {
   height: 65.64px;
   width: 65.64px;
 }
-  
+
+.lit {
+  box-shadow: -2px -2px 8px 1px#8fff7971, -3px -1px 8px 1px #8fff7971, 3px 0px 8px 1px #54ff766e, 2px -3px 8px 1px #54ff766e;
+}
+
+.neuShadow img {
+  box-shadow: -2px -3px 12px -4px#9b9b9b, 2px 3px 12px 4px #000000;
+  border-radius: 32px;
+}
+/* hover effect over clickable items */
+
+/* hover state and clicking state on submit button */
+
+/* delete old pngs from images folder */
 
 
 
