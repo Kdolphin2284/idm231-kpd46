@@ -1,6 +1,14 @@
 html {
   background-color: #333333;
+  overflow: hidden;
 }
+
+
+/* .grid {
+  display: grid;
+  grid-template-columns:  repeat(39, 2.65vw);
+  grid-template-rows: repeat(30, 32px);
+} */
 
 .grid {
     display: grid;
@@ -11,8 +19,8 @@ html {
 body {
     margin: 0;
     padding: 0;
-    width: 1280px;
-    height: 960px;
+    max-width: 1280px;
+    max-height: 960px;
     overflow: hidden;
 }
 
@@ -33,7 +41,7 @@ input[type=text] {
   color: white;
   border: none;
   border-radius: 6px;
-  box-shadow: inset -1px -2px 4px #a5a5a5, inset 3px 3px 4px rgb(22, 22, 22);
+  box-shadow: inset -1px -2px 4px #87878781, inset 3px 3px 4px rgb(22, 22, 22), -1px -2px 4px #a5a5a585, 3px 3px 4px rgb(22, 22, 22);
   height: 32px;
   width: 192px;
 }
@@ -42,12 +50,22 @@ input[type=text] {
   padding-left: 16px;
 }
 
+#date{
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: inset -1px -2px 4px #87878781, inset 3px 3px 4px rgb(22, 22, 22), -1px -2px 4px #a5a5a585, 3px 3px 4px rgb(22, 22, 22);
+  height: 32px;
+  padding-left: 16px;
+}
+
 input[type=submit]{
   background-color: #333333;
   color: white;
   border: none;
   border-radius: 6px;
-  box-shadow: inset -1px -2px 4px #a5a5a5, inset 3px 3px 4px rgb(22, 22, 22);
+  box-shadow: -4px -3px 6px #a5a5a55b, 4px 3px 10px rgba(0, 0, 0, 0.726);
   height: 32px;
   width: 72px;
 }
@@ -56,7 +74,7 @@ input[type=submit]{
   background: linear-gradient(90deg, #8BFFB2 50%,#73D695 50%);
   grid-column-start: 3;
         grid-column-end: 5;
-        grid-row-start: bottom;
+        grid-row-start: none;
         grid-row-end: 28;
 }
 
@@ -142,7 +160,7 @@ input[type=submit]{
 
 #appleLogo {
   grid-column-start: 15;
-        grid-column-end: 18;
+        grid-column-end: 17;
         grid-row-start: 15;
         grid-row-end: none;
 }
@@ -202,7 +220,7 @@ input[type=submit]{
 
 #amznLogo {
   grid-column-start: 24;
-        grid-column-end: 27;
+        grid-column-end: 26; 
         grid-row-start: 11;
         grid-row-end: none;
 }
@@ -222,7 +240,7 @@ input[type=submit]{
 
 #nflxLogo {
   grid-column-start: 27;
-        grid-column-end: 30;
+        grid-column-end: 29;
         grid-row-start: 15;
         grid-row-end: none;
 }
@@ -242,7 +260,7 @@ input[type=submit]{
 
 #nvdaLogo {
   grid-column-start: 30;
-        grid-column-end: 33;
+        grid-column-end: 32;
         grid-row-start: 11;
         grid-row-end: none;
 }
@@ -262,7 +280,7 @@ input[type=submit]{
 
 #btcLogo {
   grid-column-start: 33;
-        grid-column-end: 36;
+        grid-column-end: 35;
         grid-row-start: 7;
         grid-row-end: none;
 }
@@ -282,7 +300,7 @@ input[type=submit]{
 
 #etherLogo {
   grid-column-start: 36;
-        grid-column-end: 39;
+        grid-column-end: 38;
         grid-row-start: 5;
         grid-row-end: none;
 }
@@ -292,8 +310,13 @@ input[type=submit]{
   width: 65.64px;
 }
 
+
 .lit {
   box-shadow: -2px -2px 8px 1px#8fff7971, -3px -1px 8px 1px #8fff7971, 3px 0px 8px 1px #54ff766e, 2px -3px 8px 1px #54ff766e;
+}
+
+.neuShadow{
+  text-align: center;
 }
 
 .neuShadow img {
@@ -306,6 +329,14 @@ input[type=submit]{
 
 /* delete old pngs from images folder */
 
+/* get rid of blue outline on input fields when typing in them */
+
+/* create modal from clicking on each stock */
+
+/* program javascript to return clicks and inputs to console */
+
+/* program javascript to display images in center of webpage upon clicking 
+submit with inputs */
 
 
 
