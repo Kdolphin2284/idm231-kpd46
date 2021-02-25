@@ -1,6 +1,8 @@
 html {
   background-color: #333333;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -11,6 +13,7 @@ html {
 } */
 
 .grid {
+    margin: auto;
     display: grid;
     grid-template-columns:  repeat(39, 32.82px);
     grid-template-rows: repeat(30, 32px);
@@ -46,6 +49,13 @@ input[type=text] {
   width: 192px;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 #username {
   padding-left: 16px;
 }
@@ -65,9 +75,14 @@ input[type=submit]{
   color: white;
   border: none;
   border-radius: 6px;
-  box-shadow: -4px -3px 6px #a5a5a55b, 4px 3px 10px rgba(0, 0, 0, 0.726);
+  box-shadow: -1px -2px 4px #a5a5a585, 3px 3px 4px rgb(22, 22, 22);
   height: 32px;
   width: 72px;
+}
+
+input[type=submit]:hover {
+  box-shadow: inset -1px -2px 4px #87878781, inset 3px 3px 4px rgb(22, 22, 22), -1px -2px 4px #a5a5a585, 3px 3px 4px rgb(22, 22, 22);
+  cursor: pointer;
 }
 
 #stockOne {
@@ -315,28 +330,34 @@ input[type=submit]{
   box-shadow: -2px -2px 8px 1px#8fff7971, -3px -1px 8px 1px #8fff7971, 3px 0px 8px 1px #54ff766e, 2px -3px 8px 1px #54ff766e;
 }
 
-.neuShadow{
-  text-align: center;
-}
-
 .neuShadow img {
   box-shadow: -2px -3px 12px -4px#9b9b9b, 2px 3px 12px 4px #000000;
-  border-radius: 32px;
+  border-radius: 50%;
 }
-/* hover effect over clickable items */
 
-/* hover state and clicking state on submit button */
+.neuShadow img:hover {
+  cursor: pointer;
+  box-shadow: -2px -3px 12px -4px#b0b0b0, 2px 3px 12px 4px #b0b0b0;
+}
+
+
+/* Add a title */
 
 /* delete old pngs from images folder */
-
-/* get rid of blue outline on input fields when typing in them */
 
 /* create modal from clicking on each stock */
 
 /* program javascript to return clicks and inputs to console */
 
+/* Instead of using images, code in a template for the pop-ups that will change 
+depending on the date input */
+
+/* Put an X on the cards so that the user has a way to exit the card viewing screen */
+
 /* program javascript to display images in center of webpage upon clicking 
 submit with inputs */
+
+/* Help button required to let the user know what to do when they click it */
 
 
 
