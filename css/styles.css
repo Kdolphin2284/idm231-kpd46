@@ -1,8 +1,25 @@
+@font-face {
+  font-family: 'Din-Alternate-Bold';
+  src: url('../fonts/DIN Alternate Bold.ttf');
+}
+
+@font-face {
+  font-family: 'D-Din-Bold';
+  src: url('../fonts/D-DIN-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Avenir-Roman';
+  src: url('../fonts/avenir-roman-opentype_bigfontsite.com.otf');
+}
+
 html {
   background-color: #333333;
   overflow: hidden;
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -33,6 +50,11 @@ body {
   grid-column-start: 3;
   grid-column-end: none;
   margin-top: 16px;
+}
+
+#verticalForm h1 {
+  color: #FFFFFF;
+  font-family: Din-Alternate-Bold;
 }
 
 #verticalForm div {
@@ -83,6 +105,101 @@ input[type=submit]{
 input[type=submit]:hover {
   box-shadow: inset -1px -2px 4px #87878781, inset 3px 3px 4px rgb(22, 22, 22), -1px -2px 4px #a5a5a585, 3px 3px 4px rgb(22, 22, 22);
   cursor: pointer;
+}
+
+.helpModal {
+  background: url('../media/images/helpButtonImg.png') no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);
+  background-position: center;
+  border: .1rem solid #FFFFFF;
+  box-shadow: -1px -2px 4px #ffffff8e, 3px 3px 4px rgba(22, 22, 22, 0.331);
+  border-radius: 1rem;
+  width: 822px;
+  height: 560px;
+  
+  z-index: 11;
+
+  grid-column-start: 8;
+  grid-column-end: auto;
+  grid-row-start: none;
+  grid-row-end: 7;
+}
+
+#modalContainer {
+  display: none;
+  background: url('../media/images/googleImg.png') no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);
+  background-position: center;
+  border: .1rem solid #FFFFFF;
+  box-shadow: -1px -2px 4px #ffffff8e, 3px 3px 4px rgba(22, 22, 22, 0.331);
+  border-radius: 1rem;
+  width: 822px;
+  height: 560px;
+  
+  z-index: 10;
+
+  grid-column-start: 8;
+  grid-column-end: auto;
+  grid-row-start: none;
+  grid-row-end: 7;
+}
+
+#modal {
+  display: flex;
+  flex-direction: column;
+
+  width: 648px;
+  height: 560px;
+
+  padding: 1rem 2rem;
+}
+
+#modalImage{
+  position: relative;
+  right: 1.5rem;
+  top: 1rem;
+  float: right;
+  
+  border-radius: 50%;
+  box-shadow: -2px -3px 12px 1px#ffffff, 2px 3px 12px 4px #939393;
+
+  width: 48px;
+  height: 48px;
+
+  z-index: 999;
+}
+
+#modalImage:hover {
+  cursor: pointer;
+  box-shadow: -2px -3px 12px -4px#b0b0b0, 2px 3px 12px 4px #b0b0b0;
+}
+
+#modal h1 {
+  color: #505050;
+  font-size: 48px;
+  font-family: D-Din-Bold;
+  margin: 1rem 0;
+}
+
+#modal h2 {
+  color: #505050;
+  font-size: 24px;
+  font-family: Avenir-Roman;
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+#modal p {
+  color: #505050;
+  font-size: 24px;
+  font-family: Din-Alternate-Bold;
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+
+#helpLogo {
+  grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 10;
+        grid-row-end: none;
 }
 
 #stockOne {
@@ -341,10 +458,6 @@ input[type=submit]:hover {
 }
 
 
-/* Add a title */
-
-/* delete old pngs from images folder */
-
 /* create modal from clicking on each stock */
 
 /* program javascript to return clicks and inputs to console */
@@ -358,6 +471,8 @@ depending on the date input */
 submit with inputs */
 
 /* Help button required to let the user know what to do when they click it */
+
+/* MEANINGFUL SOUNDS AHHHHHH! */
 
 
 
