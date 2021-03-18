@@ -234,7 +234,7 @@ function userPicked(whichOne) {
       break;
       case 'nflxLogo':
       modalObj.style = "background: url('../media/images/nflxImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
-      modalHeadObj.innerHTML = 'Libra - Netflix Inc. NFLX';
+      modalHeadObj.innerHTML = 'Netflix Inc. NFLX';
       modalDateObj.innerHTML = 'September 23 - October 22';
       modalTextOneObj.innerHTML = 'Netflix was founded August 29. 1997, in Scotts Valley, California. It was founded by Reed Hastings and Marc Randolph, who both worked at Reed Hastings’ company called Pure Atria.';
       modalTextTwoObj.innerHTML = 'Netflix is a popular streaming service consisting of popular shows and movies. As of January 2021, the platform has over 203.7 million subscribers.';
