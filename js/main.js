@@ -84,7 +84,7 @@ modalImageObj.addEventListener('click', function(){
 
 helpObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
-  modalObj.style = "background: url('../media/images/helpButtonImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
+  modalObj.style = "background: url('media/images/helpButtonImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
   stopAllAudio();
   const idName = (this.id);
@@ -93,7 +93,7 @@ helpObj.addEventListener('click', function(){
 
 googleObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
-  modalObj.style = "background: url('../media/images/googleImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
+  modalObj.style = "background: url('media/images/googleImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
   stopAllAudio();
   googleSoundObj.play();
@@ -103,7 +103,7 @@ googleObj.addEventListener('click', function(){
 
 teslaObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
-  modalObj.style = "background: url('../media/images/teslaImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
+  modalObj.style = "background: url('media/images/teslaImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
   stopAllAudio();
   teslaSoundObj.play();
@@ -113,7 +113,7 @@ teslaObj.addEventListener('click', function(){
 
 jnjObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
-  modalObj.style = "background: url('../media/images/jnjImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
+  modalObj.style = "background: url('media/images/jnjImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
   stopAllAudio();
   jnjSoundObj.play();
@@ -123,7 +123,7 @@ jnjObj.addEventListener('click', function(){
 
 msftObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
-  modalObj.style = "background: url('../media/images/msftLogo.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
+  modalObj.style = "background: url('media/images/msftLogo.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
   stopAllAudio();
   msftSoundObj.play();
@@ -133,7 +133,7 @@ msftObj.addEventListener('click', function(){
 
 appleObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
-  modalObj.style = "background: url('../media/images/appleImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
+  modalObj.style = "background: url('media/images/appleImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
   stopAllAudio();
   appleSoundObj.play();
@@ -143,7 +143,7 @@ appleObj.addEventListener('click', function(){
 
 gmeObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
-  modalObj.style = "background: url('../media/images/gmeImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
+  modalObj.style = "background: url('media/images/gmeImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
   stopAllAudio();
   gmeSoundObj.play();
@@ -153,7 +153,7 @@ gmeObj.addEventListener('click', function(){
 
 pfizerObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
-  modalObj.style = "background: url('../media/images/pfizerImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
+  modalObj.style = "background: url('media/images/pfizerImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
   stopAllAudio();
   pfizerSoundObj.play();
@@ -163,7 +163,7 @@ pfizerObj.addEventListener('click', function(){
 
 amznObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
-  modalObj.style = "background: url('../media/images/amznImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
+  modalObj.style = "background: url('media/images/amznImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
   stopAllAudio();
   amznSoundObj.play();
@@ -173,7 +173,7 @@ amznObj.addEventListener('click', function(){
 
 nflxObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
-  modalObj.style = "background: url('../media/images/nflxImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
+  modalObj.style = "background: url('media/images/nflxImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
   stopAllAudio();
   nflxSoundObj.play();
@@ -183,7 +183,7 @@ nflxObj.addEventListener('click', function(){
 
 nvdaObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
-  modalObj.style = "background: url('../media/images/nvdaImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
+  modalObj.style = "background: url('media/images/nvdaImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
   stopAllAudio();
   nvdaSoundObj.play();
@@ -193,7 +193,7 @@ nvdaObj.addEventListener('click', function(){
 
 btcObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
-  modalObj.style = "background: url('../media/images/btcImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
+  modalObj.style = "background: url('media/images/btcImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
   stopAllAudio();
   btcSoundObj.play();
@@ -203,7 +203,7 @@ btcObj.addEventListener('click', function(){
 
 etherObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
-  modalObj.style = "background: url('../media/images/etherImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
+  modalObj.style = "background: url('media/images/etherImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
   stopAllAudio();
   etherSoundObj.play();
