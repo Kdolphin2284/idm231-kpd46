@@ -37,11 +37,19 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    max-width: 1280px;
-    max-height: 960px;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  max-width: 1280px;
+  max-height: 960px;
+  overflow: hidden;
+  border-bottom: #73D695 solid 1rem;
+}
+
+#darkState {
+  background: #00000077;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
 }
 
 #verticalForm {

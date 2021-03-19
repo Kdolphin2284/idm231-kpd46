@@ -25,15 +25,68 @@ const nvdaObj = document.getElementById('nvdaLogo');
 const btcObj = document.getElementById('btcLogo');
 const etherObj = document.getElementById('etherLogo');
 
+const googleSoundObj = document.getElementById('googleSnd');
+const teslaSoundObj = document.getElementById('teslaSnd');
+const jnjSoundObj = document.getElementById('jnjSnd');
+const msftSoundObj = document.getElementById('msftSnd');
+const appleSoundObj = document.getElementById('appleSnd');
+const gmeSoundObj = document.getElementById('gmeSnd');
+const pfizerSoundObj = document.getElementById('pfizerSnd');
+const amznSoundObj = document.getElementById('amznSnd');
+const nflxSoundObj = document.getElementById('nflxSnd');
+const nvdaSoundObj = document.getElementById('nvdaSnd');
+const btcSoundObj = document.getElementById('btcSnd');
+const etherSoundObj = document.getElementById('etherSnd');
+
+function stopAllAudio() {
+  googleSoundObj.pause();
+  googleSoundObj.currentTime = 0;
+  //
+  teslaSoundObj.pause();
+  teslaSoundObj.currentTime = 0;
+  //
+  jnjSoundObj.pause();
+  jnjSoundObj.currentTime = 0;
+  //
+  msftSoundObj.pause();
+  msftSoundObj.currentTime = 0;
+  //
+  appleSoundObj.pause();
+  appleSoundObj.currentTime = 0;
+  //
+  gmeSoundObj.pause();
+  gmeSoundObj.currentTime = 0;
+  //
+  pfizerSoundObj.pause();
+  pfizerSoundObj.currentTime = 0;
+  //
+  amznSoundObj.pause();
+  amznSoundObj.currentTime = 0;
+  //
+  nflxSoundObj.pause();
+  nflxSoundObj.currentTime = 0;
+  //
+  nvdaSoundObj.pause();
+  nvdaSoundObj.currentTime = 0;
+  //
+  btcSoundObj.pause();
+  btcSoundObj.currentTime = 0;
+  //
+  etherSoundObj.pause();
+  etherSoundObj.currentTime = 0;
+}
+
 modalImageObj.addEventListener('click', function(){
   console.log('Close this modal!')
   document.getElementById('modalContainer').style.display = "none";
+  stopAllAudio();
 })
 
 helpObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
   modalObj.style = "background: url('../media/images/helpButtonImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
+  stopAllAudio();
   const idName = (this.id);
   userPicked(idName);
 })
@@ -42,6 +95,8 @@ googleObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
   modalObj.style = "background: url('../media/images/googleImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
+  stopAllAudio();
+  googleSoundObj.play();
   const idName = (this.id);
   userPicked(idName);
 })
@@ -50,6 +105,8 @@ teslaObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
   modalObj.style = "background: url('../media/images/teslaImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
+  stopAllAudio();
+  teslaSoundObj.play();
   const idName = (this.id);
   userPicked(idName);
 })
@@ -58,6 +115,8 @@ jnjObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
   modalObj.style = "background: url('../media/images/jnjImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
+  stopAllAudio();
+  jnjSoundObj.play();
   const idName = (this.id);
   userPicked(idName);
 })
@@ -66,6 +125,8 @@ msftObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
   modalObj.style = "background: url('../media/images/msftLogo.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
+  stopAllAudio();
+  msftSoundObj.play();
   const idName = (this.id);
   userPicked(idName);
 })
@@ -74,6 +135,8 @@ appleObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
   modalObj.style = "background: url('../media/images/appleImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
+  stopAllAudio();
+  appleSoundObj.play();
   const idName = (this.id);
   userPicked(idName);
 })
@@ -82,6 +145,8 @@ gmeObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
   modalObj.style = "background: url('../media/images/gmeImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
+  stopAllAudio();
+  gmeSoundObj.play();
   const idName = (this.id);
   userPicked(idName);
 })
@@ -90,6 +155,8 @@ pfizerObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
   modalObj.style = "background: url('../media/images/pfizerImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
+  stopAllAudio();
+  pfizerSoundObj.play();
   const idName = (this.id);
   userPicked(idName);
 })
@@ -98,6 +165,8 @@ amznObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
   modalObj.style = "background: url('../media/images/amznImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
+  stopAllAudio();
+  amznSoundObj.play();
   const idName = (this.id);
   userPicked(idName);
 })
@@ -106,6 +175,8 @@ nflxObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
   modalObj.style = "background: url('../media/images/nflxImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
+  stopAllAudio();
+  nflxSoundObj.play();
   const idName = (this.id);
   userPicked(idName);
 })
@@ -114,6 +185,8 @@ nvdaObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
   modalObj.style = "background: url('../media/images/nvdaImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
+  stopAllAudio();
+  nvdaSoundObj.play();
   const idName = (this.id);
   userPicked(idName);
 })
@@ -122,6 +195,8 @@ btcObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
   modalObj.style = "background: url('../media/images/btcImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
+  stopAllAudio();
+  btcSoundObj.play();
   const idName = (this.id);
   userPicked(idName);
 })
@@ -130,6 +205,8 @@ etherObj.addEventListener('click', function(){
   console.log('Lets check out: ' + this.id)
   modalObj.style = "background: url('../media/images/etherImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
   document.getElementById('modalContainer').style.display = "block";
+  stopAllAudio();
+  etherSoundObj.play();
   const idName = (this.id);
   userPicked(idName);
 })
@@ -147,10 +224,6 @@ function userPicked(whichOne) {
       modalTextOneObj.innerHTML = 'This is a project which allows people to find some pretty cool information about some popular stocks. It’s also a fun way to see what stock your birthday represents! Wanna give it a try?';
       modalTextTwoObj.innerHTML = 'To find information about the stocks, click on the logos hovering above the big green \“stocks.\”';
       modalTextThreeObj.innerHTML = 'To find out which stock your birthday represents, click on the input fields at the top of the site, and fill in the boxes with your name and your birthday. When that’s done, press the submit button to view the cooresponding stock.';
-      // document.modalObj.style.backgroundImage = "url('../media/images/helpButtonImg.png') no-repeat center";
-      // display date range
-      // display description
-      // play sound
       break;
     case 'googleLogo':
       modalObj.style = "background: url('../media/images/googleImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
@@ -160,7 +233,8 @@ function userPicked(whichOne) {
       modalTextTwoObj.innerHTML = 'Google is the most popular search engine in the world, and has been since 2000. Even Yahoo has used Googleas their search engine provider for over 20 years!';
       modalTextThreeObj.innerHTML = 'As of creating this experience, the current share price is $2,101.14, and is down a total of -0.76%.';
       document.getElementById('modalContainer').style.display = "block";
-      // play sound
+      stopAllAudio();
+      googleSoundObj.play();
       break;
     case 'teslaLogo':
       modalObj.style = "background: url('../media/images/teslaImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
@@ -170,7 +244,8 @@ function userPicked(whichOne) {
       modalTextTwoObj.innerHTML = 'Tesla is a company that specializes in clean energy and creating electric vehicles. The first car that was made at Tesla is called the Roadster, and was first built in 2009.';
       modalTextThreeObj.innerHTML = 'As of creating this experience, the current share price is $781.30, and is down a total of -0.77%.';
       document.getElementById('modalContainer').style.display = "block";
-      // play sound
+      stopAllAudio();
+      teslaSoundObj.play();
       break;  
     case 'jnjLogo':
       modalObj.style = "background: url('../media/images/jnjImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
@@ -180,7 +255,8 @@ function userPicked(whichOne) {
       modalTextTwoObj.innerHTML = 'Johnson and Johnson is pharmaceutical company that develops medical devices, vaccines, as well as consumer packaged goods.';
       modalTextThreeObj.innerHTML = 'As of creating this experience, the current share price is $162.98, and is down a total of -1.67%.';
       document.getElementById('modalContainer').style.display = "block";
-      // play sound
+      stopAllAudio();
+      jnjSoundObj.play();
       break;
       case 'msftLogo':
       modalObj.style = "background: url('../media/images/msftImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
@@ -190,7 +266,8 @@ function userPicked(whichOne) {
       modalTextTwoObj.innerHTML = 'Microsoft is a company which develops, manufactures, licenses, supports, and sells computer software, and is responsible for the Xbox series of gaming consoles.';
       modalTextThreeObj.innerHTML = 'As of creating this experience, the current share price is $240.97, and is down a total of -1.16%.';
       document.getElementById('modalContainer').style.display = "block";
-      // play sound
+      stopAllAudio();
+      msftSoundObj.play();
       break;
       case 'appleLogo':
       modalObj.style = "background: url('../media/images/appleImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
@@ -200,7 +277,8 @@ function userPicked(whichOne) {
       modalTextTwoObj.innerHTML = 'Apple was the first company in the world to be valued at $1 trillion. Apple currently specializes in easy to use technologies, such as their smartphones and laptops.';
       modalTextThreeObj.innerHTML = 'As of creating this experience, the current share price is $129.87, and is up a total of 0.12%.';
       document.getElementById('modalContainer').style.display = "block";
-      // play sound
+      stopAllAudio();
+      appleSoundObj.play();
       break;
       case 'gmeLogo':
       modalObj.style = "background: url('../media/images/gmeImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
@@ -210,7 +288,8 @@ function userPicked(whichOne) {
       modalTextTwoObj.innerHTML = 'Gamestop specializes in the distribution of video games, video game consoles, and themed collectibles. The stock was recently shorted, and went as high as $483.';
       modalTextThreeObj.innerHTML = 'As of creating this experience, the current share price is $40.59, and is down a total of -0.25%';
       document.getElementById('modalContainer').style.display = "block";
-      // play sound
+      stopAllAudio();
+      gmeSoundObj.play();
       break;
       case 'pfizerLogo':
       modalObj.style = "background: url('../media/images/pfizerImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
@@ -220,7 +299,8 @@ function userPicked(whichOne) {
       modalTextTwoObj.innerHTML = 'Pfizer is a large pharmaceutical company specializing in vaccines and medicines. They have developed and are currently distributing one of the few working COVID-19 vaccines.';
       modalTextThreeObj.innerHTML = 'As of creating this experience, the current share price is $34.44 and is down a total of -0.35%.';
       document.getElementById('modalContainer').style.display = "block";
-      // play sound
+      stopAllAudio();
+      pfizerSoundObj.play();
       break;
       case 'amznLogo':
       modalObj.style = "background: url('../media/images/amznImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
@@ -230,7 +310,8 @@ function userPicked(whichOne) {
       modalTextTwoObj.innerHTML = 'Amazon specializes in the online ordering  of goods with fast shipping. The company also offers other services, such as digital streaming of movies/shows, and music.';
       modalTextThreeObj.innerHTML = 'As of creating this experience, the current share price is $3,200.00, and is down a total of -1.52%';
       document.getElementById('modalContainer').style.display = "block";
-      // play sound
+      stopAllAudio();
+      amznSoundObj.play();
       break;
       case 'nflxLogo':
       modalObj.style = "background: url('../media/images/nflxImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
@@ -240,7 +321,8 @@ function userPicked(whichOne) {
       modalTextTwoObj.innerHTML = 'Netflix is a popular streaming service consisting of popular shows and movies. As of January 2021, the platform has over 203.7 million subscribers.';
       modalTextThreeObj.innerHTML = 'As of creating this experience, the current share price is $533.16, and is down a total of -1.31%.';
       document.getElementById('modalContainer').style.display = "block";
-      // play sound
+      stopAllAudio();
+      nflxSoundObj.play();
       break;
       case 'nvdaLogo':
       modalObj.style = "background: url('../media/images/nvdaImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
@@ -250,7 +332,8 @@ function userPicked(whichOne) {
       modalTextTwoObj.innerHTML = 'NVIDIA is a company which creates chip units for the mobile computing and automotive markets, as well as a very popular manufacturer of computer parts.';
       modalTextThreeObj.innerHTML = 'As of creating this experience, the current share price is $603.07, and is up a total of 1.01%.';
       document.getElementById('modalContainer').style.display = "block";
-      // play sound
+      stopAllAudio();
+      nvdaSoundObj.play();
       break;
       case 'btcLogo':
       modalObj.style = "background: url('../media/images/btcImg.png') center no-repeat, linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4674361861861862) 100%);";
@@ -260,7 +343,8 @@ function userPicked(whichOne) {
       modalTextTwoObj.innerHTML = 'Bitcoin is a decentralized digital currency which is self reliant. This means that in order for the currency to hold value, people must use it.';
       modalTextThreeObj.innerHTML = 'As of creating this experience, the current price of a single Bitcoin is $53,582.50.';
       document.getElementById('modalContainer').style.display = "block";
-      // play sound
+      stopAllAudio();
+      btcSoundObj.play();
       break;
       case 'etherLogo':
       modalHeadObj.innerHTML = 'Ethereum (ETH)';
@@ -269,7 +353,8 @@ function userPicked(whichOne) {
       modalTextTwoObj.innerHTML = 'Ethereum is a decentralized digital currency which is self reliant. This means that in order for the currency to hold value, people must use it.';
       modalTextThreeObj.innerHTML = 'As of creating this experience, the current share price is $1,749.75, and is down a total of -10.57%.';
       document.getElementById('modalContainer').style.display = "block";
-      // play sound
+      stopAllAudio();
+      etherSoundObj.play();
       break;
   }
 }

@@ -8,101 +8,114 @@
     <link rel="stylesheet" href="css/normalize.css">
     <title>Zodiac Stocks</title>
 </head>
-
+<div id="darkState" hidden></div>
 <body class="grid">
-    <div id="verticalForm">
-        <form>
-            <h1>What stock are you? Enter your birthday to find out!</h1>
-            <div id="inputName">
-                <input type="text" class="inputName" placeholder="Name" name="username" id="username">
-            </div>
+        <div id="verticalForm">
+            <form>
+                <h1>What stock are you? Enter your birthday to find out!</h1>
+                <div id="inputName">
+                    <input type="text" class="inputName" placeholder="Name" name="username" id="username">
+                </div>
 
-            <div id="inputDate">
-                <input type="date" id="date" name="date">
-            </div>
+                <div id="inputDate">
+                    <input type="date" id="date" name="date">
+                </div>
 
-            <div id="submitInput">
-                <input type="submit" value="Submit">
-            </div>
-        </form>
-    </div>
-    <div id="modalContainer">
-        <div id="modalImage">
-            <img src="media/images/closeIcon.png">
+                <div id="submitInput">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
         </div>
-            <div id="modal">
-                <h1 id="modalHead">Head</h1>
-                <h2 id="modalDate">Date</h2>
-                <p id="modalTextOne">Text</p> 
-                <p id="modalTextTwo">Text</p>
-                <p id="modalTextThree">Text</p>
+        <div id="modalContainer">
+            <div id="modalImage">
+                <img src="media/images/closeIcon.png">
             </div>
-    </div>
+                <div id="modal">
+                    <h1 id="modalHead">Head</h1>
+                    <h2 id="modalDate">Date</h2>
+                    <p id="modalTextOne">Text</p> 
+                    <p id="modalTextTwo">Text</p>
+                    <p id="modalTextThree">Text</p>
+                </div>
+        </div>
 
-    <div id="helpLogo" class="neuShadow">
-        <img src="media/images/helpLogo.png" alt="Google Logo">
-    </div>
+        <audio id="googleSnd" src="media/sounds/googleSound.mp3" preload="auto"></audio>
+        <audio id="teslaSnd" src="media/sounds/teslaSound.mp3" preload="auto"></audio>
+        <audio id="jnjSnd" src="media/sounds/jnjSound.mp3" preload="auto"></audio>
+        <audio id="msftSnd" src="media/sounds/msftSound.mp3" preload="auto"></audio>
+        <audio id="appleSnd" src="media/sounds/appleSound.mp3" preload="auto"></audio>
+        <audio id="gmeSnd" src="media/sounds/gmeSound.mp3" preload="auto"></audio>
+        <audio id="pfizerSnd" src="media/sounds/pfizerSound.mp3" preload="auto"></audio>
+        <audio id="amznSnd" src="media/sounds/amznSound.mp3" preload="auto"></audio>
+        <audio id="nflxSnd" src="media/sounds/nflxSound.mp3" preload="auto"></audio>
+        <audio id="nvdaSnd" src="media/sounds/nvdaSound.mp3" preload="auto"></audio>
+        <audio id="btcSnd" src="media/sounds/btcSound.mp3" preload="auto"></audio>
+        <audio id="etherSnd" src="media/sounds/etherSound.mp3" preload="auto"></audio>
 
-    <div id="stockOne" class="lit"></div>
-    <div id="googleLogo" class="neuShadow">
-        <img src="media/images/googleLogo.png" alt="Google Logo">
-    </div>
+        <div id="helpLogo" class="neuShadow">
+            <img src="media/images/helpLogo.png" alt="Google Logo">
+        </div>
 
-    <div id="stockTwo" class="lit"></div>
-    <div id="teslaLogo" class="neuShadow">
-        <img src="media/images/teslaLogo.png" alt="Tesla Logo">
-    </div>
+        <div id="stockOne" class="lit"></div>
+        <div id="googleLogo" class="neuShadow">
+            <img src="media/images/googleLogo.png" alt="Google Logo">
+        </div>
 
-    <div id="stockThree" class="lit"></div>
-    <div id="jnjLogo" class="neuShadow">
-        <img src="media/images/jnjLogo.png" alt="Johnson and Johnson Logo">
-    </div>
+        <div id="stockTwo" class="lit"></div>
+        <div id="teslaLogo" class="neuShadow">
+            <img src="media/images/teslaLogo.png" alt="Tesla Logo">
+        </div>
 
-    <div id="stockFour" class="lit"></div>
-    <div id="msftLogo" class="neuShadow">
-        <img src="media/images/msftLogo.png" alt="Microsoft Logo">
-    </div>
+        <div id="stockThree" class="lit"></div>
+        <div id="jnjLogo" class="neuShadow">
+            <img src="media/images/jnjLogo.png" alt="Johnson and Johnson Logo">
+        </div>
 
-    <div id="stockFive" class="lit"></div>
-    <div id="appleLogo" class="neuShadow">
-        <img src="media/images/appleLogo.png" alt="Apple Logo">
-    </div>
+        <div id="stockFour" class="lit"></div>
+        <div id="msftLogo" class="neuShadow">
+            <img src="media/images/msftLogo.png" alt="Microsoft Logo">
+        </div>
 
-    <div id="stockSix" class="lit"></div>
-    <div id="gmeLogo" class="neuShadow">
-        <img src="media/images/gmeLogo.png" alt="Gamestop Logo">
-    </div>
+        <div id="stockFive" class="lit"></div>
+        <div id="appleLogo" class="neuShadow">
+            <img src="media/images/appleLogo.png" alt="Apple Logo">
+        </div>
 
-    <div id="stockSeven" class="lit"></div>
-    <div id="pfizerLogo" class="neuShadow">
-        <img src="media/images/pfizerLogo.png" alt="Pfizer Logo">
-    </div>
+        <div id="stockSix" class="lit"></div>
+        <div id="gmeLogo" class="neuShadow">
+            <img src="media/images/gmeLogo.png" alt="Gamestop Logo">
+        </div>
 
-    <div id="stockEight" class="lit"></div>
-    <div id="amznLogo" class="neuShadow">
-        <img src="media/images/amznLogo.png" alt="Amazon.com Logo">
-    </div>
+        <div id="stockSeven" class="lit"></div>
+        <div id="pfizerLogo" class="neuShadow">
+            <img src="media/images/pfizerLogo.png" alt="Pfizer Logo">
+        </div>
 
-    <div id="stockNine" class="lit"></div>
-    <div id="nflxLogo" class="neuShadow">
-        <img src="media/images/nflxLogo.png" alt="Netflix Logo">
-    </div>
-    
-    <div id="stockTen" class="lit"></div>
-    <div id="nvdaLogo" class="neuShadow">
-        <img src="media/images/nvdaLogo.png" alt="NVIDIA Logo">
-    </div>
+        <div id="stockEight" class="lit"></div>
+        <div id="amznLogo" class="neuShadow">
+            <img src="media/images/amznLogo.png" alt="Amazon.com Logo">
+        </div>
 
-    <div id="stockEleven" class="lit"></div>
-    <div id="btcLogo" class="neuShadow">
-        <img src="media/images/btcLogo.png" alt="Bitcoin Logo">
-    </div>
+        <div id="stockNine" class="lit"></div>
+        <div id="nflxLogo" class="neuShadow">
+            <img src="media/images/nflxLogo.png" alt="Netflix Logo">
+        </div>
+        
+        <div id="stockTen" class="lit"></div>
+        <div id="nvdaLogo" class="neuShadow">
+            <img src="media/images/nvdaLogo.png" alt="NVIDIA Logo">
+        </div>
 
-    <div id="stockTwelve" class="lit"></div>
-    <div id="etherLogo" class="neuShadow">
-        <img src="media/images/etherLogo.png" alt="Ethereum Logo">
-    </div>
+        <div id="stockEleven" class="lit"></div>
+        <div id="btcLogo" class="neuShadow">
+            <img src="media/images/btcLogo.png" alt="Bitcoin Logo">
+        </div>
 
-    <script src="js/main.js"></script>
+        <div id="stockTwelve" class="lit"></div>
+        <div id="etherLogo" class="neuShadow">
+            <img src="media/images/etherLogo.png" alt="Ethereum Logo">
+        </div>
+
+        <script src="js/main.js"></script>
 </body>
 </html>
